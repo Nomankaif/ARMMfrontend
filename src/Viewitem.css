@@ -1019,7 +1019,7 @@ body {
 .modal-container {
   background: white;
   border-radius: 24px;
-  max-width: 1200px;
+  max-width: 1500px;
   max-height: 90vh;
   width: 100%;
   overflow: hidden;
@@ -1101,7 +1101,7 @@ body {
 
 .modal-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   max-height: calc(90vh - 100px);
   overflow: hidden;
 }
@@ -1236,7 +1236,9 @@ body {
 .modal-details {
   padding: 2rem;
   overflow-y: auto;
+  max-height: 40vh; /* limits height to 40% of viewport */
   background: white;
+  border-top: 1px solid #e2e8f0;
 }
 
 .detail-section {
@@ -1656,3 +1658,30 @@ body {
   background-color: #1e40af; /* blue-800 */
 }
 
+.modal-content {
+
+  flex-direction: column;
+  max-height: calc(90vh - 100px); /* prevent overflow below modal */
+  overflow: hidden;
+
+}
+
+/* Scrollable content for long descriptions */
+.modal-details {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex-grow: 1;
+  background: #ffffff;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+  
+}
+
+.modal-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-details::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+}
