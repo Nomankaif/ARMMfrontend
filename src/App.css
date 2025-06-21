@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+nav {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 16px;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f59e0b;
+}
